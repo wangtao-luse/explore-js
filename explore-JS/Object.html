@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+		//1.ECMAScript的对象是一组数据和功能的集合;
+		  var person = {"id":1,name:"joe",show:function(){
+		  	console.log("I'm joe.");
+		  },
+		   add:function(a,b){
+		   	return a+b;
+		   }
+		  }
+		 //2.对象访问方式：通对象名和属性名方式访问对象;
+		  var id = person.id;
+		  var name = person["name"];
+		  var s = person["show"];//输出函数
+		  var show = person.show();//调用函数
+		  var sum = person.add(1,3);
+		  console.log(id);
+		  console.log(name);
+		  console.log(s);
+		  console.log(sum);
+		  
+		  //1.创建对象-字面量方式
+		  var p = {};
+		  var stu = {"id":1,name:"joe",};
+		  var sid = stu.id;
+		  var sname = stu['name'];
+		  console.log(stu);
+		  console.log(sid);
+		  console.log(sname);
+		  
+		 //2.创建对象-new字符
+		 var company = new Object("google");
+		 console.log(company);
+		 var apple = new Object({"name":"apple","product":["iphone","ipad","mac","watch"]})
+		 console.log(apple);
+		 
+		 //对象迭代
+		 var p ={"id":1,"name":"Mac"};
+		 //迭代方式
+			 for(k in p){
+			 	var key=k;
+			 	var value=p[k];
+			 	console.log(key+"--"+value);
+			 }
+
+		 
+		</script>
+	</body>
+</html>

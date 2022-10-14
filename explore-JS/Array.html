@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+	<script>
+		
+		//1.创建数组-常规方式		
+		var arr = new Array();
+		arr[0]="Math";
+		arr[1]="Chiese";
+		var stu = {"subject":"PE","name":"Mr.Smith"};
+		arr[2]=stu;		
+		console.log(arr);
+		
+		//2.创建数组-简洁方式
+		var student = {"subject":"PE","name":"Mr.Smith"};
+		var arr1 = new Array("1","2",student);
+		console.log(arr1);
+
+        //3.创建数组-字面量方式
+        var arr2 =["1","2",{"id":"1","name":"Mike"}];
+		console.log(arr2);
+		var arr3=[
+			{"id":"1","mc":"amy"},
+			{"id":"2","mc":"mike"},
+		]
+		console.log(arr3);
+		
+       //4.应用-构建数组传给服务器
+        //1.创建一个数组
+		var arr4= new Array();
+		//2.创建一个空的对象
+		var s={};
+		//3.为对象赋值
+		    s.id="1";
+		    s.name="amy";		   
+	    //4.将对象放入数组对象中
+	    arr4.push(s);//push()在数组的末尾添加一个元素;
+        
+        
+        //访问数组:通过指定数组名以及索引访问某个特定的元素。
+       var  arr5=[
+			{"id":"1","mc":"amy"},
+			{"id":"2","mc":"mike"},
+		];
+		console.log(arr5[0]);
+	</script>	
+	</body>
+</html>
